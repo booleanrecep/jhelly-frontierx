@@ -3,13 +3,13 @@ import logo from '@/src/assets/images/logo_muted.png';
 
 export const Footer = (): JSX.Element => {
   return (
-    <div className="w-full flex justify-center bg-black h-28 items-center">
+    <div className='w-full flex justify-center bg-black h-20 md:h-28 items-center'>
       <Image
         src={logo.src}
-        layout="fixed"
+        layout='fixed'
         width={150}
         height={23}
-        alt="FrontierX Logo"
+        alt='FrontierX Logo'
       />
     </div>
   );

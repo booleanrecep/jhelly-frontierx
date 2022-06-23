@@ -6,7 +6,9 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation:"pulse 3s linear infinite"
+    },
   },
   plugins: [require('tw-elements/dist/plugin')],
 }

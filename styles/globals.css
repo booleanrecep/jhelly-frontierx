@@ -7,30 +7,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: 'Manrope', sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .accordion-button::after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important ;
 }
-/* width */
+
 .scrollbar-custom::-webkit-scrollbar {
   width: 3px;
   height: 25px;
 }
 
-/* Track */
 .scrollbar-custom::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
@@ -38,7 +26,6 @@ a {
   border: 1px solid #56565680;
 }
 
-/* Handle */
 .scrollbar-custom::-webkit-scrollbar-thumb {
   height: 6px;
   background: #1c1c1c;
@@ -48,6 +35,19 @@ a {
   padding: 60px;
 }
 
-/* Handle on hover */
-.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+.awesome-gradient {
+  background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

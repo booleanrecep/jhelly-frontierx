@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettify":"npx prettier --write ./src/** ./styles/* ./pages/*"
+    "prettify":"npx prettier --write ./src/* ./styles/* ./pages/* "
   },
   "dependencies": {
     "axios": "^0.27.2",

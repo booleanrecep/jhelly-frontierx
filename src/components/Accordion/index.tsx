@@ -6,14 +6,13 @@ interface Props {
 }
 export const Accordion: FC<Props> = ({ title, children }): JSX.Element => {
   const accordionId = useId().replace(/[:]/g, '');
-  console.log(accordionId);
   return (
     <>
-      <div className="accordion p-3" id={`acco${accordionId}`}>
-        <div className="accordion-item ">
-          <h2 className="accordion-header mb-0" id={`head${accordionId}`}>
+      <div className='accordion p-3' id={`acco${accordionId}`}>
+        <div className='accordion-item '>
+          <h2 className='accordion-header mb-0' id={`head${accordionId}`}>
             <button
-              className="
+              className='
               accordion-button
               relative
               flex
@@ -29,11 +28,11 @@ export const Accordion: FC<Props> = ({ title, children }): JSX.Element => {
               focus:outline-none
               !rounded-none 
               !rounded-t
-              !bg-[#0d0d0d80]"
-              type="button"
-              data-bs-toggle="collapse"
+              !bg-[#0d0d0d80]'
+              type='button'
+              data-bs-toggle='collapse'
               data-bs-target={`#collapse${accordionId}`}
-              aria-expanded="true"
+              aria-expanded='true'
               aria-controls={`collapse${accordionId}`}
             >
               {title}
@@ -41,11 +40,11 @@ export const Accordion: FC<Props> = ({ title, children }): JSX.Element => {
           </h2>
           <div
             id={`collapse${accordionId}`}
-            className="accordion-collapse collapse show"
+            className='accordion-collapse collapse show'
             aria-labelledby={`head${accordionId}`}
             data-bs-parent={`#acco${accordionId}`}
           >
-            <div className="accordion-body p-5 bg-[#0d0d0d80] !rounded-b">
+            <div className='accordion-body p-5 bg-[#0d0d0d80] !rounded-b'>
               {children}
             </div>
           </div>
