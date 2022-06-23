@@ -1,11 +1,11 @@
-import Link from "next/link";
-import { FC, useId } from "react";
+import Link from 'next/link';
+import { FC, useId } from 'react';
 interface Props {
   title: any;
   children: JSX.Element | JSX.Element[];
 }
 export const Accordion: FC<Props> = ({ title, children }): JSX.Element => {
-  const accordionId = useId().replace(/[:]/g, "");
+  const accordionId = useId().replace(/[:]/g, '');
   console.log(accordionId);
   return (
     <>

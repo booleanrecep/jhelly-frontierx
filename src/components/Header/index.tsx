@@ -1,19 +1,25 @@
-import Image from "next/image";
-import Link from "next/link";
-import {FiSearch } from 'react-icons/fi'
-import {  GiHamburgerMenu} from "react-icons/gi";
-import logo from '@/src/assets/images/logo.png'
+import Image from 'next/image';
+import Link from 'next/link';
+import { FiSearch } from 'react-icons/fi';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import logo from '@/src/assets/images/logo.png';
 export const Header = (): JSX.Element => {
   return (
     <div className="flex justify-between items-center bg-black px-5 md:px-10 h-24">
-      <Image src={logo.src} layout="fixed" width={200} height={23} alt="FrontierX Logo" />
+      <Image
+        src={logo.src}
+        layout="fixed"
+        width={200}
+        height={23}
+        alt="FrontierX Logo"
+      />
       <form className="flex items-center w-full justify-end mr-4 md:mr-10">
         <label htmlFor="voice-search" className="sr-only">
           Search
         </label>
         <div className="relative w-10/12 md:w-2/3  text-[13px] ">
           <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-            <FiSearch className="w-5 h-5 text-gray-500 dark:text-gray-400"/>
+            <FiSearch className="w-5 h-5 text-gray-500 dark:text-gray-400" />
           </div>
           <input
             type="text"
@@ -25,27 +31,23 @@ export const Header = (): JSX.Element => {
         </div>
       </form>
       <div className=" text-white hidden justify-around gap-10  text-[15px] md:flex  ">
-        <Link href={"#"}>
-          Lorem
-        </Link>
-        <Link href={"#"}>
-          Lorem
-        </Link>
-        <Link href={"#"}>
-          Lorem
-        </Link>
+        <Link href={'#'}>Lorem</Link>
+        <Link href={'#'}>Lorem</Link>
+        <Link href={'#'}>Lorem</Link>
       </div>
       <div className="md:hidden flex">
-      <div className="flex justify-center">
-  <div>
-    <div className="dropdown relative">
+        <div className="flex justify-center">
+          <div>
+            <div className="dropdown relative">
+              <GiHamburgerMenu
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                className="w-7 h-7 text-gray-500 dark:text-gray-400 cursor-pointer"
+              />
 
-       <GiHamburgerMenu   id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false" className="w-7 h-7 text-gray-500 dark:text-gray-400 cursor-pointer"/>
-   
-      <ul
-        className="
+              <ul
+                className="
           dropdown-menu
           min-w-max
           absolute
@@ -64,10 +66,11 @@ export const Header = (): JSX.Element => {
           bg-clip-padding
           border-none
         "
-        aria-labelledby="dropdownMenuButton1"
-      >
-        <li>
-          <a className="
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a
+                    className="
               dropdown-item
               text-sm
               py-2
@@ -80,12 +83,14 @@ export const Header = (): JSX.Element => {
               text-gray-700
               hover:bg-gray-100
             "
-            href="#"
-            >Lorem ipsum</a>
-        </li>
-        <li>
-          <a
-            className="
+                    href="#"
+                  >
+                    Lorem ipsum
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="
               dropdown-item
               text-sm
               py-2
@@ -98,12 +103,14 @@ export const Header = (): JSX.Element => {
               text-gray-700
               hover:bg-gray-100
             "
-            href="#"
-            >Lorem ipsum</a>
-        </li>
-        <li>
-          <a
-            className="
+                    href="#"
+                  >
+                    Lorem ipsum
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="
               dropdown-item
               text-sm
               py-2
@@ -116,15 +123,16 @@ export const Header = (): JSX.Element => {
               text-gray-700
               hover:bg-gray-100
             "
-            href="#"
-            >Lorem ipsum</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+                    href="#"
+                  >
+                    Lorem ipsum
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
-

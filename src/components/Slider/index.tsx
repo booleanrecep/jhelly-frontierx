@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
-import img1 from "@/src/assets/images/1.png";
-import img2 from "@/src/assets/images/2.png";
-import img3 from "@/src/assets/images/3.png";
-import eye from "@/src/assets/eye.svg";
-
+import img1 from '@/src/assets/images/1.png';
+import img2 from '@/src/assets/images/2.png';
+import img3 from '@/src/assets/images/3.png';
+import eye from '@/src/assets/eye.svg';
 
 export const Slider = () => {
   const [windowSize, setWindowSize] = useState<{
@@ -24,9 +23,9 @@ export const Slider = () => {
         height: window.innerHeight,
       });
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
     <>
@@ -38,7 +37,6 @@ export const Slider = () => {
               clickable: true,
             }}
             className="mySwiper"
-            
           >
             <SwiperSlide>
               <Image
@@ -50,7 +48,7 @@ export const Slider = () => {
               />
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
+              {' '}
               <Image
                 layout="fixed"
                 width={320}

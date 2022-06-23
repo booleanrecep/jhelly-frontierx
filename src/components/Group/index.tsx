@@ -1,14 +1,18 @@
-import { FC } from "react";
-import { FiGrid, FiClipboard, FiCommand } from "react-icons/fi";
+import { FC } from 'react';
+import { FiGrid, FiClipboard, FiCommand } from 'react-icons/fi';
 
 export const Group: FC<any> = (): JSX.Element => {
   return (
     <div className="middle flex justify-center flex-col items-center my-7 ">
-      <p className="text-3xl text-white font-extrabold text[45px]">Lorem ipsum</p>
+      <p className="text-3xl text-white font-extrabold text[45px]">
+        Lorem ipsum
+      </p>
       <p className=" mt-4 text-[16px] font-normal">
         Created by: <span className="text-[#FC364C]">Lorem ipsum</span>
       </p>
-      <p className="my-4 text-[16px] font-normal">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+      <p className="my-4 text-[16px] font-normal">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+      </p>
       <div className=" flex justify-center my-10 flex-wrap  gap-6">
         <button
           type="button"
@@ -33,5 +37,5 @@ export const Group: FC<any> = (): JSX.Element => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
